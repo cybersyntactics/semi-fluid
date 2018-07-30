@@ -1,0 +1,212 @@
+
+/* semi-fluid-container */
+
+.semi-fluid-container {
+	padding: 0;
+	width: 100%;
+}
+
+.semi-fluid-container .fixed {
+	height: auto;
+}
+
+.semi-fluid-container>.row
+, .semi-fluid-container .fixed
+, .semi-fluid-container .sm-fixed
+, .semi-fluid-container .md-fixed
+, .semi-fluid-container .lg-fixed
+, .semi-fluid-container .lt-sm-fixed
+, .semi-fluid-container .lt-md-fixed
+, .semi-fluid-container .lt-lg-fixed {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.semi-fluid-container .row.fluid {
+	margin-left: -15px;
+	margin-right: -15px;
+	width: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.semi-fluid-container>.row {
+		/* width: 738px; /* max-width: 738px; */
+		width: 750px;
+	}
+
+	.semi-fluid-container .sm-fixed, .semi-fluid-container .fixed {
+		width: 750px;
+	}
+
+	.semi-fluid-container .sm-fluid {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	.semi-fluid-container>.row {
+		/*width: 962px;*/
+		width: 970px;
+	}
+
+	.semi-fluid-container .md-fixed, .semi-fluid-container .fixed {
+		width: 970px;
+	}
+
+	.semi-fluid-container .md-fluid {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.semi-fluid-container>.row {
+		width: 1170px;
+	}
+
+	.semi-fluid-container .lg-fixed, .semi-fluid-container .fixed {
+		width: 1170px;
+	}
+
+	.semi-fluid-container .lg-fluid {
+		width: 100%;
+	}
+}
+
+/* Less than (lt-) classes to sizes for fixed/fluid, because the css revert property is 
+   not yet supported, so sm-no-fluid, reverting to the fixed column width percentages, 
+   class is possible currently. 
+*/
+
+@media only screen and (max-width: 767px) {
+	.semi-fluid-container .lt-sm-fixed {
+		/*width: 750px;*/
+	}
+
+	.semi-fluid-container .lt-sm-fluid {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.semi-fluid-container .lt-md-fixed{
+		width: 750px;
+	}
+
+	.semi-fluid-container .lt-md-fluid {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.semi-fluid-container .lt-lg-fixed {
+		width: 970px;
+	}
+
+	.semi-fluid-container .lt-lg-fluid {
+		width: 100%;
+	}
+}
+
+.semi-fluid-container .fluid {
+	width: 100%;
+}
+
+
+
+/* Drop shadows */
+
+.drop-shadow {
+	position: relative;
+	box-shadow: 0 0 1em black;
+}
+
+@media only screen and (min-width: 767px) {
+	.sm-drop-shadow {
+		position: relative;
+		z-index: 1;
+		box-shadow: 0 0 1em black;
+	}
+
+	.sm-no-drop-shadow {
+		box-shadow: none;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	.md-drop-shadow {
+		position: relative;
+		z-index: 1;
+		box-shadow: 0 0 1em black;
+	}
+
+	.md-no-drop-shadow {
+		box-shadow: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.lg-drop-shadow {
+		position: relative;
+		z-index: 1;
+		box-shadow: 0 0 1em black;
+	}
+
+	.lg-no-drop-shadow {
+		box-shadow: none;
+	}
+}
+
+
+/* clearfix https://css-tricks.com/snippets/css/clear-fix/ */
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+@media only screen and (min-width: 767px) {
+	.sm-group:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+
+	.sm-no-group:after {
+		content: none;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	.md-group:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+
+	.md-no-group:after {
+		content: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.lg-group:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+
+	.lg-no-group:after {
+		content: none;
+	}
+}

@@ -24,7 +24,7 @@ Available classes
 Usage
 -----
 
-All fixed and fluid row classes must be used within an element with the `semi-fluid-container` class. The container defult to `fluid` (width: 100%) but can be changed `fixed` (width based on xs, sm, md, lg default breakpoints) by adding the `fixed` class to the container (which will effect all rows within that container). Individual rows behavior can be changed by adding `fixed` or `sm`/`md`/`lg` `-fixed` to the row (or `fluid` or `sm`/`md`/`lg` `-fluid` if the containers default behavior has been changed to fixed) to apply to all viewport widths equal or above the specified breakpoint size. `lt-` can be prefixed to the above classes to apply fixed/fluid if the viewport is **l**ess **t**han the specified break point.
+All fixed and fluid row classes must be used on a row (or nested row) within an element with the `semi-fluid-container` class. The container defults to `fluid` (width: 100%) but can be changed to `fixed` (width based on sm, md, lg default breakpoints) by adding the `fixed` class to the `semi-fluid-container` element (which will effect all rows within that container). Individual rows behavior can be changed by adding `fixed` (or `fluid` if the `semi-fluid-container` class element also has the `fixed` class) to that row (affecting all sizes) or `sm`/`md`/`lg` `-fixed` to the row (or `sm`/`md`/`lg` `-fluid`) to apply to all viewport widths equal to or above the specified breakpoint size. `lt-` can be prefixed to the above classes to apply fixed/fluid if the viewport is less than the specified break point.
 
 Future Updates
 --------------

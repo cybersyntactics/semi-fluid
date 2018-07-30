@@ -1,4 +1,5 @@
 Semi-Fluid Layouts for Bootstrap
+================================
 
 Installation
 ------------

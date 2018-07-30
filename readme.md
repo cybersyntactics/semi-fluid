@@ -10,6 +10,10 @@ Available classes
 -----------------
 
 `semi-fluid-container`
+	* `sm`/`md`/`lg``-fixed`
+	* `sm`/`md`/`lg``-fluid`
+	* `lt-``sm`/`md`/`lg``-fixed`
+	* `lt-``sm`/`md`/`lg``-fluid`
 
 
 Usage
